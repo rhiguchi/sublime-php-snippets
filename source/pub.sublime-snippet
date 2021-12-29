@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-public function ${1:name}(\$$2)${TM_PHP_SNIPPET_OPENING_BRACE:
+public function ${1:name}(\$${2:param})${TM_PHP_SNIPPET_OPENING_BRACE:
 \{}
 	$0
 }
