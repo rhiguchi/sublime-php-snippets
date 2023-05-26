@@ -31,127 +31,129 @@ Windows | `git clone https://github.com/gerardroche/sublime-php-snippets.git %AP
 
 Enable [tab-completions](http://docs.sublimetext.info/en/latest/extensibility/completions.html#tab-completed-completions).
 
-`Menu > Preferences > Settings`
+**Menu → Preferences → Settings**
 
-```json
-{
-    "tab_completion": true
-}
+```js
+"tab_completion": true
 ```
 
 | Trigger | Description |
 | ------- | ----------- |
-| `<?` | PHP: Script start tag |
-| `<?=` | PHP: Script short echo tag |
-| `/**` | PHP: Start Docblock |
-| `?=` | PHP: Script short echo tag |
-| `_C` | PHP: COOKIE['...'] |
-| `_E` | PHP: ENV['...'] |
-| `_F` | PHP: FILES['...'] |
-| `_G` | PHP: GET['...'] |
-| `_P` | PHP: POST['...'] |
-| `_R` | PHP: REQUEST['...'] |
-| `_S` | PHP: SERVER['...'] |
-| `_SS` | PHP: SESSION['...'] |
-| `am` | PHP: array map a closure |
-| `array` | PHP: Initialise a variable with an array |
+| `<?` | PHP: start tag |
+| `<?` | PHTML: &lt;?php ... ?&gt; |
+| `<?=` | PHP: short echo tag |
+| `/**` | PHP: phpdoc |
+| `?=` | PHP: short echo tag |
+| `_C` | PHP: COOKIE['|'] |
+| `_E` | PHP: ENV['|'] |
+| `_F` | PHP: FILES['|'] |
+| `_G` | PHP: GET['|'] |
+| `_P` | PHP: POST['|'] |
+| `_R` | PHP: REQUEST['|'] |
+| `_S` | PHP: SERVER['|'] |
+| `_SS` | PHP: SESSION['|'] |
+| `am` | PHP: array map |
+| `arr` | PHP: variable = array |
+| `c` | PHP: class |
 | `c` | PHP: class declaration |
-| `case` | PHP: case statement |
-| `class` | PHP: class declaration |
-| `closure` | PHP: Closure declaration |
-| `con` | PHP: class constructor definition |
-| `def` | PHP: define(..., ...) |
-| `def?` | PHP: defined(...) |
-| `do` | PHP: do-while statement |
-| `doc_c` | PHP: Documented class |
-| `doc_d` | PHP: Documented constant definition |
-| `doc_f` | PHP: Documented function |
-| `doc_i` | PHP: Documented interface |
-| `doc_s` | PHP: Documented function signature |
-| `doc_v` | PHP: Documented class variable |
-| `dst` | PHP: declare strict_types statement |
-| `echo` | PHP: echo '...' |
-| `echo` | PHTML: &lt;?php echo ... ?&gt; |
-| `echoh` | PHTML: echo htmlentities(...) |
-| `else` | PHP: else statement |
-| `else` | PHTML: else statement |
-| `elseif` | PHP: elseif statement |
-| `elseif` | PHTML: elseif statement |
-| `endfor` | PHTML: endfor statement |
-| `endforeach` | PHTML: endforeach statement |
-| `endif` | PHTML: endif statement |
-| `endswitch` | PHTML: endswitch statement |
-| `endwhile` | PHTML: endwhile statement |
+| `case` | PHP: case |
+| `class` | PHP: class |
+| `closure` | PHP: closure |
+| `con` | PHP: constructor |
+| `def` | PHP: define |
+| `def?` | PHP: defined |
+| `do` | PHP: do while |
+| `doc_c` | PHP: phpdoc class |
+| `doc_d` | PHP: phpdoc constant |
+| `doc_f` | PHP: phpdoc function |
+| `doc_i` | PHP: phpdoc interface |
+| `doc_s` | PHP: phpdoc function |
+| `doc_v` | PHP: phpdoc property |
+| `dst` | PHP: declare strict_types |
+| `echo` | PHP: echo string |
+| `echo` | PHTML: echo variable |
+| `echoh` | PHTML: echo htmlentities |
+| `else` | PHP: else |
+| `else` | PHTML: else |
+| `elseif` | PHP: elseif |
+| `elseif` | PHTML: elseif |
+| `endfor` | PHTML: endfor |
+| `endforeach` | PHTML: endforeach |
+| `endif` | PHTML: endif |
+| `endswitch` | PHTML: endswitch |
+| `endwhile` | PHTML: endwhile |
 | `ethis` | PHP: echo $this-&gt; |
-| `ethis` | PHTML: &lt;?php echo $this-&gt;... ?&gt; |
-| `ev` | PHP: echo '...' |
-| `f` | PHP: function definition |
-| `flatten` | PHP: Flatten an array |
-| `for` | PHP: for statement |
-| `foreach` | PHP: foreach {value} statement |
-| `foreach` | PHTML: foreach {value} statement |
-| `foreachk` | PHP: foreach {key} {value} statement |
-| `foreachk` | PHTML: foreach {key} {value} statement |
-| `fpri` | PHP: final private class method declaration |
-| `fpris` | PHP: final private static class method declaration |
-| `fpro` | PHP: final protected class method declaration |
-| `fpub` | PHP: final public class method declaration |
-| `fpubs` | PHP: final public static class method declaration |
-| `fun` | PHP: function definition |
+| `ethis` | PHTML: echo $this-&gt; |
+| `ev` | PHP: echo variable |
+| `f` | PHP: function |
+| `flatten` | PHP: flatten array |
+| `for` | PHP: for |
+| `foreach` | PHP: foreach value |
+| `foreach` | PHTML: foreach value |
+| `foreachk` | PHP: foreach key => value |
+| `foreachk` | PHTML: foreach key => value |
+| `foreachv` | PHP: foreach value |
+| `fpri` | PHP: final private method |
+| `fpris` | PHP: final private static method |
+| `fpro` | PHP: final protected method |
+| `fpub` | PHP: final public method |
+| `fpubs` | PHP: final public static method |
+| `fun` | PHP: function |
 | `getter` | PHP: getter |
-| `globals` | PHP: $GLOBALS['...'] |
+| `globals` | PHP: $GLOBALS['|'] |
 | `gm` | PHP: getter |
-| `i` | PHP: interface definition |
-| `if` | PHP: if statement |
-| `if` | PHTML: if statement |
-| `if?` | PHP: $... = ( ... ) ? ... : ... |
-| `ifelse` | PHP: if-else statement |
-| `ifelse` | PHTML: if-else statement |
-| `inc` | PHP: include expression |
-| `inc1` | PHP: include_once expression |
-| `is` | PHP: $... = ( ... ) ? ... : ... |
-| `kv` | PHP: Array key value |
-| `m` | PHP: class method declaration |
-| `met` | PHP: function definition |
-| `n` | PHP: namespace definition |
-| `namespace` | PHP: namespace definition |
-| `p` | PHP: class property declaration |
+| `i` | PHP: interface |
+| `if` | PHP: if |
+| `if` | PHTML: if |
+| `if?` | PHP: var = cond ? a:b |
+| `ifelse` | PHP: if-else |
+| `ifelse` | PHTML: if-else |
+| `inc` | PHP: include 'file' |
+| `inc1` | PHP: include_once 'file' |
+| `is` | PHP: isset var |
+| `kv` | PHP: 'key' => 'value' |
+| `m` | PHP: method |
+| `met` | PHP: method |
+| `n` | PHP: namespace |
+| `namespace` | PHP: namespace |
+| `p` | PHP: property |
 | `php` | PHTML: &lt;?php ... ?&gt; |
-| `pr` | PHP: Print human readable information about a variable |
-| `pre` | PHP: Print human readable information about a variable and exit |
-| `pri` | PHP: private class method declaration |
-| `pro` | PHP: protected class method declaration |
-| `pub` | PHP: public class method declaration |
-| `pubs` | PHP: public static class method declaration |
-| `r` | PHP: return statement |
-| `req` | PHP: require expression |
-| `req1` | PHP: require_once expression |
-| `reqd` | PHP: require dirname expression |
+| `pr` | PHP: print_r |
+| `pre` | PHP: print_r and exit |
+| `pri` | PHP: private method |
+| `pro` | PHP: protected method |
+| `psm` | PHP: public static method |
+| `pub` | PHP: public method |
+| `pubs` | PHP: public static method |
+| `r` | PHP: return |
+| `req` | PHP: require file |
+| `req1` | PHP: require_once file |
+| `reqd` | PHP: require dirname file |
 | `ret` | PHP: return |
-| `ret0` | PHP: return false statement |
-| `ret1` | PHP: return true statement |
-| `retf` | PHP: return false statement |
-| `rett` | PHP: return true statement |
-| `rt` | PHP: return $this statement |
-| `rv` | PHP: return variable statement |
+| `ret0` | PHP: return false |
+| `ret1` | PHP: return true |
+| `retf` | PHP: return false |
+| `rett` | PHP: return true |
+| `rt` | PHP: return $this |
+| `rv` | PHP: return var |
 | `self` | PHP: self:: |
 | `setter` | PHP: setter |
 | `sm` | PHP: setter |
-| `switch` | PHP: switch statement |
+| `switch` | PHP: switch |
 | `t` | PHP: $this-&gt; |
 | `this` | PHP: $this-&gt; |
-| `this` | PHTML: &lt;?php $this-&gt;... ?&gt; |
-| `throw` | PHP: throw exception statement |
-| `trait` | PHP: trait definition |
-| `try` | PHP: Wrap in try { ... } catch (...) { ... } |
-| `use` | PHP: namespace use declaration |
-| `vd` | PHP: Dump information about a variable |
-| `vde` | PHP: Dump information about a variable and exit |
-| `while` | PHP: while statement |
+| `this` | PHTML: &lt;?php $this-&gt;| ?&gt; |
+| `throw` | PHP: throw exception |
+| `trait` | PHP: trait |
+| `try` | PHP: try catch |
+| `use` | PHP: use |
+| `vd` | PHP: dump var |
+| `vde` | PHP: dump var and exit |
+| `while` | PHP: while |
 
 ## CONFIGURATION
 
-Create a file named `php-snippets-phtml-settings.tmPreferences` in your User packages directory (`Menu > Preferences > Browse Packages...`) with the following (modified to meet your needs):
+Create a file named `php-snippets-phtml-settings.tmPreferences` in your User packages directory (`Menu → Preferences → Browse Packages...`) with the following (modified to meet your needs):
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
